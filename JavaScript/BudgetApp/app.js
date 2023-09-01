@@ -1,5 +1,5 @@
-// BUDGET CONTROLLER
-var budgetController = (function(){
+ // BUDGET CONTROLLER
+ var budgetController = (function(){
 
     var Expense = function (id, description, value){
         this.id = id;
@@ -63,7 +63,7 @@ var budgetController = (function(){
             } else if (type === 'inc'){
                 newItem = new Income(ID,des,val);
             }
-                // czy tu powinnny byc nawiasy kwadratowe czy kropkka 
+                
                 //dodanie do obiektu z wszystkimi wydatkami i przychodami
             data.allItems[type].push(newItem);
             // zwrocenie nowego obiektu by byl dostepny z zewnatrz
